@@ -2,51 +2,193 @@
 <html lang="en-gb">
 
 <head>
-
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">`
+  <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Custom fonts for this template -->
+  <script src="https://kit.fontawesome.com/188d621110.js" crossorigin="anonymous"></script>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-
-
 </head>
 
+<body >
 
-<body>
+  <!-- Portfolio Navigation. A navigation menu at the top.
+    Feel free to use the navbar code provided in Bootstrap's documentation, 
+    or create your own navbar by applying the correct Bootstrap classes to your HTML. 
+    Include links that are applicable to your portfolio. Links should navigate to the appropriate sections-->
 
-  <!-- Portfolio Navigation -->
-
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://uk.linkedin.com/in/ayshahmalik">Contact</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/ashm32">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="css/CV.docx.pdf">Resume</a>
+              </li>
+             <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About me</a>
+                <a class="dropdown-item" href="#">Contact</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="css/CV.docx.pdf">Resume</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+  
  <!--  A hero section - A jumbotron featuring your picture, your name, and any other information you'd like to include-->
- 
+ <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"> < Ayshah Malik  ></h1>
+      <img src="https://placehold.co/150">
+      <p class="lead">I'm a front end developer who focusses on writing clean and efficient code. My websites are custom-built, fast loading and accessible.</p>
+    </div>
+  </div>
+
+
  <!--  A work section - A section displaying your work in grid. If you need to use placeholder image use: https://placehold.co/ 
     Use bootstrap cards for each project. The description should give a brief overview of the work. Each project will eventually link to your class project work! -->
+    <div class="container" id="projects">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://placehold.co/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://placehold.co/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://placehold.co/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://placehold.co/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://placehold.co/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Project 5</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="https://placehold.co/150" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Project 6</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
  <!-- A skills section- List out the skills you expect to learn from the bootcamp. -->
  
+ <div class="container" id="#about">
+    <div class="row">
+        <div class="col">
+    <div class="card" style="width: 15rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item active">Bootcamp Skills</li>
+            <li class="list-group-item">HTML and CSS</li>
+            <li class="list-group-item">Bootstrap</li>
+            <li class="list-group-item disabled">JavaScript</li>
+            <li class="list-group-item">Version Control</li>
+            <li class="list-group-item">Search Engine Optimization</li>
+          </ul>
+      </div>
+    </div>
+
  <!-- An about / contact section. An "About Me" section in the same row.-->
  
+ <div class="col">
+    <div class="card" style="width: 25rem;">
+        <div class="media">
+            <img src="https://placehold.co/100" class="mr-3" alt="...">
+            <div class="media-body" id="#about">
+              <h5 class="mt-0">About Me</h5>
+             <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+
  <!-- A footer section- All hyperlinks should have a hover effect. All buttons should display a box shadow upon hover -->
- 
-  <footer> </footer>
+  <footer> 
+    <div class="icons">
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+  </footer>
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!--   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -55,7 +197,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
--->
 </body>
 
 </html>
