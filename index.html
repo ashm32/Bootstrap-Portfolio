@@ -27,6 +27,7 @@
   <!-- Portfolio Navigation. A navigation menu at the top.
     Includes links that are applicable to my portfolio. 
     Links navigate to the appropriate sections-->
+    
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Home</a>
@@ -37,16 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
               </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/ashm32">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="css/CV.docx.pdf">Resume</a>
@@ -57,10 +58,10 @@
   
  <!--  A hero section - A jumbotron featuring my placeholder picture, my name,
      and a line of information about me-->
+     
  <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4"> < Ayshah Malik  ></h1>
-      <img src="https://placehold.co/150">
       <p class="lead">I'm a front end developer who focusses on writing clean and efficient code. My websites are custom-built, fast loading and accessible.</p>
     </div>
   </div>
@@ -136,12 +137,12 @@
 
 
  <!-- A skills section- Lists out the skills I expect to learn from the bootcamp. -->
- 
+   <div class="skills">
  <div class="container">
     <div class="row">
         <div class="col">
-    <div class="card" style="width: 15rem;">
-        <ul class="list-group list-group-flush">
+    <div class="card" >
+        <ul class="list-group">
             <li class="list-group-item active">Bootcamp Skills</li>
             <li class="list-group-item">HTML and CSS</li>
             <li class="list-group-item">Bootstrap</li>
@@ -152,42 +153,70 @@
       </div>
     </div>
     </div>
+</div>
  </div>
- <!-- An about / contact section in the same row. The linkedin icon is a link-->
- <div class="container" id="#about">
-    <div class="row">
- <div class="col">
-    <div class="card" style="width: 25rem;">
-        <div class="media">
-            <img src="https://placehold.co/100" class="mr-3" alt="...">
-            <div class="media-body" id="about">
-              <h5 class="mt-0">About Me</h5>
-             <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+ <!-- An about / contact section. The linkedin icon is a link-->
+    <!-- About Section -->
+    <section>
+        <div class="container" id="about">
+            <div class="about">
+          <div class="row justify-content-center">
+            <div class="col-md-5 order-md-2">
+              <div class="p-5">
+                <img class="img-fluid rounded-circle" src="http://placehold.co/300x300" alt="Picture of me">
+              </div>
             </div>
-          </div>
-      </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 25rem;">
-            <div class="media">
-                <div class="media-body" id="contact">
-                  <h5 class="mt-0">Contact Me</h5>
-                 <p> You can contact me at: ash.m32@icloud.com <br> or you can message me on 
-                 <a href="https://uk.linkedin.com/in/ayshahmalik" class="fa-brands fa-linkedin"></a>
-                 LinkedIn
-                </p>
+            <div class="col-lg-7 order-lg-1 text-white">
+              <div class="p-5">
+                <h2 class="display-4">About me</h2>
+                <p>I'm a front end web developer, who focusses on making fast, responsive and accessible websites.</p>
+                <a href="css/CV.docx.pdf" class="btn btn-lg btn-outline-light">
+                   <i class="fas fa-download"></i>
+                   View my Resume</a>
                 </div>
               </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!--Contact-->
+ <div class="container">
+    <div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4" />
+                <div class="small text-black-50"><a href="#">ash.m32@icloud.com</a></div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4" />
+                        <div class="small text-black-50">+44 (###) Birmingham </div>
+                      </div>
+                </div>
+              </div>
+            </div> 
 </div>
 </div>
 
  <!-- A footer section- All hyperlinks should have a hover effect. All buttons should display a box shadow upon hover -->
   <footer> 
-    <div class="icons">
-        <i class="fa-brands fa-linkedin"></i>
+    <div class="social d-flex justify-content-center">
+        <a class="mx-2" href="https://github.com/ashm32"><i class="fab fa-github"></i></a>
+        <a class="mx-2" href="https://uk.linkedin.com/in/ayshahmalik"><i class="fa-brands fa-linkedin"></i></a>
     </div>
+    <p class="text-muted small mb-4 mb-lg-0">&copy; <br> Ayshah's Portfolio 2023. Coded by yours truly!<br></p>
+
   </footer>
 
 
