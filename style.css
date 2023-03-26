@@ -1,7 +1,8 @@
 /*Created variables for colour*/
 :root{
     --nav: #cef1ef;
-    --containerbg: #6d6e6e;
+    --containerbg: #939697;
+    --grey:#b1b4b6;
 }
 html,
 body {
@@ -24,7 +25,7 @@ body {
   }
 
   .navbar-brand{
-    background-color: #b1b4b6;
+    background-color: var(--grey);
 }
 
 /*styling for the main section of text*/
@@ -63,6 +64,11 @@ body {
     color: #111010;
     text-align: center;
 }
+.list-group-item:hover {
+  color: var(--nav);
+  background-color: var(--grey);
+  text-align: center;
+}
 
 .skills > .card{
 
@@ -78,7 +84,7 @@ body {
 
 #contact{
 margin-top: 15px;
-margin-left: 25%;
+justify-self: center;
 }
 
 /*footer icon styling, changes colour when hovered over and adds a box shadow*/
