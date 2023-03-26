@@ -1,0 +1,102 @@
+/*Created variables for colour*/
+:root{
+    --nav: #cef1ef;
+    --containerbg: #939697;
+    --grey:#b1b4b6;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  }
+
+/*styling for navigation bar*/
+.nav-item {
+    border-color: rgba(34, 34, 34, 0.05);
+    background-color: var(--nav);
+    transition: all 0.35s;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  .navbar-brand{
+    background-color: var(--grey);
+}
+
+/*styling for the main section of text*/
+.jumbotron {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: rgb(207, 31, 31);
+    font-family: 'Courier New', Courier, monospace;
+  }
+ 
+  
+/*styles the project boxes, changed the button colours*/
+#projects{
+   color: rgb(59, 57, 56);
+   padding-bottom: 50px;
+}
+.col{
+    padding-bottom: 20px;
+ }
+
+.btn{
+    background-color: gray;
+    border-color: gray;
+}
+/*styling for the skills box, title is in a different coloured box, Javascript is disabled bc we are yet to learn it*/
+.list-group > .active{
+    background-color: var(--nav);
+    border: #111010;
+    color: #111010;
+    text-align: center;
+}
+
+.list-group {
+    color: #111010;
+    text-align: center;
+}
+.list-group-item:hover {
+  color: var(--nav);
+  background-color: var(--grey);
+  text-align: center;
+}
+
+.skills > .card{
+
+    justify-self: center;
+}
+/*about and contact*/
+.about{
+    background-color: var(--containerbg);
+    justify-self: center;
+
+}
+
+
+#contact{
+margin-top: 15px;
+justify-self: center;
+}
+
+/*footer icon styling, changes colour when hovered over and adds a box shadow*/
+.list-inline-item:hover{
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}  
+.list-inline-item{
+  margin-top: 10px;
+} 
+
+@media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
